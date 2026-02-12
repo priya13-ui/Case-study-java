@@ -1,0 +1,18 @@
+class MultipleExceptionDemo {
+    public static void main(String[] args) {
+        try {
+            int a = 10 / 0;              // ArithmeticException
+            int[] arr = new int[3];
+            arr[5] = 20;                // ArrayIndexOutOfBoundsException
+        }
+        catch (ArithmeticException e) {
+            System.out.println("Arithmetic Error: Division by zero");
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array Index Error");
+        }
+        catch (Exception e) {
+            System.out.println("General Exception");
+        }
+    }
+}
