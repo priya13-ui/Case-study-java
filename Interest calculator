@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class SimpleInterest {
+    double p, r, t;
+
+    void calculate() {
+        double si = (p * r * t) / 100;
+        System.out.print("Simple Interest: " + si);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        SimpleInterest s = new SimpleInterest();
+
+        s.p = sc.nextDouble();
+        s.r = sc.nextDouble();
+        s.t = sc.nextDouble();
+
+        s.calculate();
+    }
+}
