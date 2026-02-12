@@ -1,0 +1,21 @@
+class Organization {
+    String name = "TechCorp";
+
+    void showOrg() {
+        System.out.println("Organization: " + name);
+    }
+}
+
+class Employee extends Organization {
+    String empName = "Ravi";
+
+    void showEmployee() {
+        System.out.println("Employee: " + empName);
+    }
+
+    public static void main(String[] args) {
+        Employee e = new Employee();
+        e.showOrg();
+        e.showEmployee();
+    }
+}
