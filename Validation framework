@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+// Custom Exception
+class InvalidInputException extends Exception {
+    InvalidInputException(String message) {
+        super(message);
+    }
+}
+
+class InputDemo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a positive number: ");
+        int num = sc.nextInt();
+
+        try {
+            if (num <= 0) {
+                throw new InvalidInputException("Invalid Input! Number must be positive.");
+            }
+            System.out.println("You entered: " + num);
+        } catch (InvalidInputException e) {
+            System.out.println("Exception: " + e.getMessage());
+        }
+    }
+}
