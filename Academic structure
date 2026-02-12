@@ -1,0 +1,24 @@
+class University {
+    void showUniversity() {
+        System.out.println("University: ABC University");
+    }
+}
+
+class College extends University {
+    void showCollege() {
+        System.out.println("College: Engineering College");
+    }
+}
+
+class Student extends College {
+    void showStudent() {
+        System.out.println("Student: Anitha");
+    }
+
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.showUniversity();
+        s.showCollege();
+        s.showStudent();
+    }
+}
