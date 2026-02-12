@@ -1,0 +1,11 @@
+public class SwapSensors {
+    public static void main(String[] args) {
+        int sensor1 = 25, sensor2 = 40;
+
+        sensor1 = sensor1 + sensor2;
+        sensor2 = sensor1 - sensor2;
+        sensor1 = sensor1 - sensor2;
+
+        System.out.print("Sensor1: " + sensor1 + " Sensor2: " + sensor2);
+    }
+}
